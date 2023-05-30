@@ -3,6 +3,7 @@ import requests
 
 
 
+
 try:
 
     source = requests.get('https://www.betika.com/en-ke/virtuals/table/6')
@@ -10,11 +11,11 @@ try:
     soup = BeautifulSoup(source.text, 'html.parser')
 
 
+    print(soup)
+    
 
-    results = soup.find('tbody').find_all('tr')
 
 
-    print(len(results))
  
 except Exception as e:
     print(e)
