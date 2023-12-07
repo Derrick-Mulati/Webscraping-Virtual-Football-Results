@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
+
 try:
     source = requests.get('https://www.betpawa.co.ke/virtual-sports?virtualTab=results')
     source.raise_for_status()
